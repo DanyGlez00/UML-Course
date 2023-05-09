@@ -84,3 +84,40 @@ html {
     }
   }
 }
+
+.hero{
+  display: flex;
+  padding: 24px 64px 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  &-content {
+    width: 647px;
+    margin-right: 18px;
+    h1 {
+      color: #3a6150;
+      font-size: 48px;
+      margin-bottom: 36px;
+    }
+    h2 {
+      color: #3a6150;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+    button {
+      border: none;
+      border-radius: 2px;
+      width: 196px;
+      height: 48px;
+      cursor: pointer;
+      background-color: #3a6150;
+      font-size: 18px;
+      color: #ffffff
+    }
+  }
+}

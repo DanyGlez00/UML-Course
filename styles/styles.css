@@ -84,4 +84,41 @@ html {
   cursor: pointer;
 }
 
+.hero {
+  display: flex;
+  padding: 24px 64px 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+.hero-content {
+  width: 647px;
+  margin-right: 18px;
+}
+.hero-content h1 {
+  color: #3a6150;
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+.hero-content h2 {
+  color: #3a6150;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.hero-content p {
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+.hero-content button {
+  border: none;
+  border-radius: 2px;
+  width: 196px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #3a6150;
+  font-size: 18px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */
