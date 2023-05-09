@@ -121,4 +121,41 @@ html {
   color: #ffffff;
 }
 
+.about-us {
+  display: flex;
+  padding: 80px 64px;
+  justify-content: space-between;
+}
+.about-us .card {
+  background-color: #3a6150;
+  width: 647px;
+  padding: 24px 24px 35px;
+  display: flex;
+  gap: 18px;
+  color: #ffffff;
+}
+.about-us .card-content {
+  width: 400px;
+  position: relative;
+}
+.about-us .card-content h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.about-us .card-content p {
+  font-size: 14px;
+}
+.about-us .card-content-link {
+  position: absolute;
+  bottom: 0px;
+  color: #ffffff;
+}
+.about-us .card-content-link a {
+  color: inherit;
+  text-decoration: none;
+}
+.about-us .card-content-link a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */
