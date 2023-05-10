@@ -17,14 +17,10 @@
       <nav class="header-nav">
         <img src="./assets/Logo.svg" alt="Logo" class="header-logo" />
         <ul class="header-nav-menu">
-          <li><a href="#">About Us</a></li>
-          <li><i></i></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><i></i></li>
-          <li><a href="#">Blog</a></li>
-          <li><i></i></li>
-          <li><a href="#">Site Map</a></li>
-          <li><i></i></li>
+          <li><a href="#">About Us </a><span>|</span></li>
+          <li><a href="#">Contact Us </a><span>|</span></li>
+          <li><a href="#">Blog </a><span>|</span></li>
+          <li><a href="#">Site Map </a><span>|</span></li>
           <li><a href="#">Eng</a></li>
           <img
             class="drop-down-arrow"
@@ -78,7 +74,7 @@
         <article class="card">
           <img src="./assets/aboutus-image.png" alt="About us image" />
           <div class="card-content">
-            <h3>About Us</h3>
+            <h3>About Us 2</h3>
             <p class="card-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
               tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -94,6 +90,111 @@
           </div>
         </article>
       </section>
+      <section class="contact-us">
+        <div class="contact-us-card">
+          <div class="contact-us-info">
+            <h2>Contact Us</h2>
+            <p class="contact-us-info-text">
+              Fill up the form and ur Team will get back to you within 24 hours.
+              Happy to see your message!
+            </p>
+            <div class="contact-us-info-contact">
+              <div class="contact-us-info-contact-wrapper">
+                <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+                <p>+380 93 15 32 456</p>
+              </div>
+              <div class="contact-us-info-contact-wrapper">
+                <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+                <p>example@gmail.com</p>
+              </div>
+              <div class="contact-us-info-contact-wrapper">
+                <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+                <p>Pidmurma 5a, Lviv</p>
+              </div>
+            </div>
+            <div class="contact-us-info-socials">
+              <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+              <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+              <img src="./assets/fb-logo.svg" alt="Facebook logo" />
+            </div>
+            <img class="contact-us-info-image" src="./assets/contact-us-image.png" alt="">
+          </div>
+          <div class="contact-us-form">
+            <form action="">
+              <fieldset class="form-input-wrap">
+                <div class="form-input">
+                  <label for="name"><span>*</span>First Name</label>
+                  <input type="text" id="name" placeholder="Jhon" />
+                </div>
+                <div class="form-input">
+                  <label for="lastname"><span>*</span>Last Name</label>
+                  <input type="text" id="lastname" placeholder="Doe" />
+                </div>
+                <div class="form-input">
+                  <label for="name">Email</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="example@gmail.com" />
+                </div>
+                <div class="form-input">
+                  <label for="phone">Phone Number</label>
+                  <div class="form-input-dropdown">
+                    <select name="area-code" id="area-code">
+                      <option value="+380">+380</option>
+                      <option value="+212">+212</option>
+                      <option value="+909">+909</option>
+                      <option value="+702">+702</option>
+                    </select>
+                    <p>|</p>
+                    <input type="text" id="phone" placeholder="00 000 00 00" />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="form-input-radio-buttons">
+                <label>
+                  <input type="radio" name="radio-button" value="UI" checked />
+                  <span>UI Developer</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio-button" value="Designer"  />
+                  <span>UI/UX Designer</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio-button" value="Accessibility"  />
+                  <span>Accessibility Expert</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio-button" value="QA"  />
+                  <span>QA Engineer</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio-button" value="Other"  />
+                  <span>Other</span>
+                </label>
+                
+              </fieldset>
+              <fieldset class="form-textarea">
+                <label for="message">Message</label>
+                <textarea  id="message" placeholder="Text here..."></textarea>
+              </fieldset>
+              <fieldset class="form-checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox" value="checkbox" />
+                  <span>Accept the Terms</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="checkbox" value="checkbox" />
+                  <span>Accept the Terms</span>
+                </label>
+              </fieldset>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+      </footer>
     </main>
     <div style="height: 10000px"></div>
   </body>
