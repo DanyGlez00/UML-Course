@@ -324,6 +324,9 @@ html {
           span {
             font-size: 14px;
           }
+          &:focus-within::before {
+            outline: 2px solid #3a6150;
+          }
         }
       }
       .form-textarea {
@@ -411,6 +414,108 @@ html {
         bottom: 48px;
         right: 20px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+.plantme {
+  display: flex;
+  padding: 24px 64px;
+  &-newsletter {
+    margin-right: 244px;
+    h2 {
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 145%;
+      margin-bottom: 31px;
+    }
+    form {
+      display: flex;
+      input {
+        border: none;
+        border-bottom: 1px solid #111111;
+        width: 308px;
+        padding-top: 17px;
+        padding-bottom: 11px;
+        font-family: inherit;
+        font-size: 18px;
+        outline: none;
+        margin-right: 30px;
+      }
+      button {
+        background-color: #3a6150;
+        color: #fff;
+        border: none;
+        padding: 16px 58px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    }
+  }
+  &-links {
+    margin-right: 236px;
+    li {
+      list-style: none;
+      margin-bottom: 16px;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 18px;
+        line-height: 150%;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &-info {
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      margin-bottom: 8px;
+    }
+    .phone-num {
+      color: rgba(0, 0, 0, 0.6);
+    }
+    a {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 18px;
+    }
+    .sponsors {
+      display: flex;
+      align-content: center;
+      margin-top: 43px;
+      gap: 35px;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  padding: 24px 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+  p {
+    text-align: center;
+    grid-column: 2;
+    font-size: 14px;
+  }
+  &-links {
+    ul {
+      display: flex;
+      gap: 15px;
+      justify-content: end;
+      li {
+        list-style: none;
+        font-size: 14px;
+        a {
+          text-decoration: none;
+          color: rgba(17, 17, 17, 0.5);
+        }
       }
     }
   }

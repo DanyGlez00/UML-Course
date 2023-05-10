@@ -321,6 +321,9 @@ html {
 .contact-us-form form .form-input-radio-buttons label span {
   font-size: 14px;
 }
+.contact-us-form form .form-input-radio-buttons label:focus-within::before {
+  outline: 2px solid #3a6150;
+}
 .contact-us-form form .form-textarea {
   display: flex;
   flex-direction: column;
@@ -399,6 +402,104 @@ html {
   bottom: 48px;
   right: 20px;
   cursor: pointer;
+}
+
+.plantme {
+  display: flex;
+  padding: 24px 64px;
+}
+.plantme-newsletter {
+  margin-right: 244px;
+}
+.plantme-newsletter h2 {
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.plantme-newsletter p {
+  font-size: 18px;
+  line-height: 145%;
+  margin-bottom: 31px;
+}
+.plantme-newsletter form {
+  display: flex;
+}
+.plantme-newsletter form input {
+  border: none;
+  border-bottom: 1px solid #111111;
+  width: 308px;
+  padding-top: 17px;
+  padding-bottom: 11px;
+  font-family: inherit;
+  font-size: 18px;
+  outline: none;
+  margin-right: 30px;
+}
+.plantme-newsletter form button {
+  background-color: #3a6150;
+  color: #fff;
+  border: none;
+  padding: 16px 58px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.plantme-links {
+  margin-right: 236px;
+}
+.plantme-links li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.plantme-links li a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 18px;
+  line-height: 150%;
+}
+.plantme-links li a:hover {
+  text-decoration: underline;
+}
+.plantme-info p {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+.plantme-info .phone-num {
+  color: rgba(0, 0, 0, 0.6);
+}
+.plantme-info a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+}
+.plantme-info .sponsors {
+  display: flex;
+  align-content: center;
+  margin-top: 43px;
+  gap: 35px;
+}
+
+.footer {
+  display: grid;
+  padding: 24px 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer p {
+  text-align: center;
+  grid-column: 2;
+  font-size: 14px;
+}
+.footer-links ul {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+.footer-links ul li {
+  list-style: none;
+  font-size: 14px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */

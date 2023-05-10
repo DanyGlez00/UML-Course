@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
       rel="stylesheet" />
+    <script src="./index.js" defer></script>
     <title>Landing - Accessibility</title>
   </head>
   <body>
@@ -117,7 +118,10 @@
               <img src="./assets/fb-logo.svg" alt="Facebook logo" />
               <img src="./assets/fb-logo.svg" alt="Facebook logo" />
             </div>
-            <img class="contact-us-info-image" src="./assets/contact-us-image.png" alt="">
+            <img
+              class="contact-us-info-image"
+              src="./assets/contact-us-image.png"
+              alt="" />
           </div>
           <div class="contact-us-form">
             <form action="">
@@ -152,31 +156,33 @@
                 </div>
               </fieldset>
               <fieldset class="form-input-radio-buttons">
-                <label>
+                <label tabindex="20">
                   <input type="radio" name="radio-button" value="UI" checked />
                   <span>UI Developer</span>
                 </label>
-                <label>
-                  <input type="radio" name="radio-button" value="Designer"  />
+                <label tabindex="21">
+                  <input type="radio" name="radio-button" value="Designer" />
                   <span>UI/UX Designer</span>
                 </label>
-                <label>
-                  <input type="radio" name="radio-button" value="Accessibility"  />
+                <label tabindex="22">
+                  <input
+                    type="radio"
+                    name="radio-button"
+                    value="Accessibility" />
                   <span>Accessibility Expert</span>
                 </label>
                 <label>
-                  <input type="radio" name="radio-button" value="QA"  />
+                  <input type="radio" name="radio-button" value="QA" />
                   <span>QA Engineer</span>
                 </label>
                 <label>
-                  <input type="radio" name="radio-button" value="Other"  />
+                  <input type="radio" name="radio-button" value="Other" />
                   <span>Other</span>
                 </label>
-                
               </fieldset>
               <fieldset class="form-textarea">
                 <label for="message">Message</label>
-                <textarea  id="message" placeholder="Text here..."></textarea>
+                <textarea id="message" placeholder="Text here..."></textarea>
               </fieldset>
               <fieldset class="form-checkbox">
                 <label>
@@ -193,9 +199,47 @@
           </div>
         </div>
       </section>
-      <footer>
-      </footer>
+      <section class="plantme">
+        <div class="plantme-newsletter">
+          <h2>PlantMe</h2>
+          <p>
+            Subscribe and be the first to know about our news and promotions.
+          </p>
+          <form action="">
+            <input type="text" placeholder="example@gmail.com" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="plantme-links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="plantme-info">
+          <p>Contacts</p>
+          <p class="phone-num">+38 063 072 0121</p>
+          <a href="#">plantme.store@gmail.com</a>
+          <div class="sponsors">
+            <img src="./assets/visa.svg" alt="Visa logo" /><img
+              src="./assets/mastercard.svg"
+              alt="Mastercard logo" />
+          </div>
+        </div>
+      </section>
     </main>
-    <div style="height: 10000px"></div>
+    <div style="border: 1px solid #E9E9E9"></div>
+    <footer class="footer">
+      <p>© 2022 PlantMe. All Rights Reserved</p>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privay Policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Language</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
