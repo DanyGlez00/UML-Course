@@ -15,22 +15,39 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <img src="./assets/Logo.svg" alt="Logo" class="header-logo" />
+      <nav class="header-nav" role="navigation">
+        <img
+          tabindex="0"
+          src="./assets/Logo.svg"
+          alt="Company logo"
+          class="header-logo" />
         <ul class="header-nav-menu">
-          <li><a href="#">About Us </a><span>|</span></li>
-          <li><a href="#">Contact Us </a><span>|</span></li>
-          <li><a href="#">Blog </a><span>|</span></li>
-          <li><a href="#">Site Map </a><span>|</span></li>
-          <li><a href="#">Eng</a></li>
-          <img
-            class="drop-down-arrow"
-            src="./assets/Arrow-Down.svg"
-            alt="drop-down" />
+          <li>
+            <a aria-label="About us" tabindex="0" href="#">About Us </a
+            ><span>|</span>
+          </li>
+          <li>
+            <a aria-label="Contact us" tabindex="0" href="#">Contact Us </a
+            ><span>|</span>
+          </li>
+          <li>
+            <a aria-label="Blog" tabindex="0" href="#">Blog </a><span>|</span>
+          </li>
+          <li>
+            <a aria-label="Site" tabindex="0" href="#">Site Map </a
+            ><span>|</span>
+          </li>
+          <li><a aria-label="Eng" tabindex="0" href="#">Eng</a></li>
         </ul>
+        <!-- <img
+          class="drop-down-arrow"
+          src="./assets/Arrow-Down.svg"
+          alt="drop-down" /> -->
         <div class="header-search">
-          <input type="text" placeholder="Search this site" />
-          <button><img src="./assets/Search.svg" alt="search" /></button>
+          <input tabindex="0" type="text" placeholder="Search this site" />
+          <button role="button" tabindex="0">
+            <img src="./assets/Search.svg" alt="Icon of magnifying glass" />
+          </button>
         </div>
       </nav>
     </header>
@@ -47,15 +64,15 @@
             ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor
             sit amet, consectetur adipiscing elit.
           </p>
-          <button>Buy Now</button>
+          <button role="button" tabindex="0">Buy Now</button>
         </div>
         <div class="hero-image">
-          <img src="./assets/hero-img.png" alt="Accessibility" />
+          <img src="./assets/hero-img.png" alt="Image of leaves" />
         </div>
       </section>
       <section class="about-us">
         <article class="card">
-          <img src="./assets/aboutus-image.png" alt="About us image" />
+          <img src="./assets/aboutus-image.png" alt="Image of leaves" />
           <div class="card-content">
             <h3>About Us</h3>
             <p class="card-text">
@@ -68,12 +85,12 @@
               tincidunt posuere eu risus cursus.
             </p>
             <div class="card-content-link">
-              <a href="">Learn more about</a><span> →</span>
+              <a tabindex="0" href="#">Learn more about</a><span> →</span>
             </div>
           </div>
         </article>
         <article class="card">
-          <img src="./assets/aboutus-image.png" alt="About us image" />
+          <img src="./assets/aboutus-image.png" alt="Image of leaves" />
           <div class="card-content">
             <h3>About Us 2</h3>
             <p class="card-text">
@@ -86,7 +103,7 @@
               tincidunt posuere eu risus cursus.
             </p>
             <div class="card-content-link">
-              <a href="">Learn more about</a><span> →</span>
+              <a tabindex="0" href="#">Learn more about</a><span> →</span>
             </div>
           </div>
         </article>
@@ -121,80 +138,143 @@
             <img
               class="contact-us-info-image"
               src="./assets/contact-us-image.png"
-              alt="" />
+              alt="Background image of a plant" />
           </div>
           <div class="contact-us-form">
             <form action="">
-              <fieldset class="form-input-wrap">
+              <fieldset role="group" class="form-input-wrap">
                 <div class="form-input">
                   <label for="name"><span>*</span>First Name</label>
-                  <input type="text" id="name" placeholder="Jhon" />
+                  <input
+                    tabindex="0"
+                    type="text"
+                    id="name"
+                    aria-label="First Name"
+                    aria-required="true"
+                    role="textbox"
+                    placeholder="Jhon" />
                 </div>
                 <div class="form-input">
                   <label for="lastname"><span>*</span>Last Name</label>
-                  <input type="text" id="lastname" placeholder="Doe" />
+                  <input
+                    tabindex="0"
+                    type="text"
+                    id="lastname"
+                    aria-label="Last Name"
+                    aria-required="true"
+                    role="textbox"
+                    placeholder="Doe" />
                 </div>
                 <div class="form-input">
-                  <label for="name">Email</label>
+                  <label for="email">Email</label>
                   <input
+                    tabindex="0"
                     type="text"
-                    id="name"
+                    id="email"
+                    aria-label="email"
+                    role="textbox"
                     placeholder="example@gmail.com" />
                 </div>
                 <div class="form-input">
                   <label for="phone">Phone Number</label>
                   <div class="form-input-dropdown">
-                    <select name="area-code" id="area-code">
+                    <select
+                      aria-label="Select area code"
+                      role="combobox"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      tabindex="0"
+                      name="area-code"
+                      id="area-code">
                       <option value="+380">+380</option>
                       <option value="+212">+212</option>
                       <option value="+909">+909</option>
                       <option value="+702">+702</option>
                     </select>
                     <p>|</p>
-                    <input type="text" id="phone" placeholder="00 000 00 00" />
+                    <input
+                      tabindex="0"
+                      type="text"
+                      id="phone"
+                      aria-label="Phone Number"
+                      role="textbox"
+                      placeholder="00 000 00 00" />
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="form-input-radio-buttons">
-                <label tabindex="20">
-                  <input type="radio" name="radio-button" value="UI" checked />
+              <fieldset role="radiogroup" class="form-input-radio-buttons">
+                <label tabindex="0">
+                  <input
+                    type="radio"
+                    role="radio"
+                    name="radio-button"
+                    value="UI"
+                    checked />
                   <span>UI Developer</span>
                 </label>
-                <label tabindex="21">
-                  <input type="radio" name="radio-button" value="Designer" />
+                <label tabindex="0">
+                  <input
+                    type="radio"
+                    role="radio"
+                    name="radio-button"
+                    value="Designer" />
                   <span>UI/UX Designer</span>
                 </label>
-                <label tabindex="22">
+                <label tabindex="0">
                   <input
                     type="radio"
                     name="radio-button"
                     value="Accessibility" />
                   <span>Accessibility Expert</span>
                 </label>
-                <label>
-                  <input type="radio" name="radio-button" value="QA" />
+                <label tabindex="0">
+                  <input
+                    type="radio"
+                    role="radio"
+                    name="radio-button"
+                    value="QA" />
                   <span>QA Engineer</span>
                 </label>
-                <label>
-                  <input type="radio" name="radio-button" value="Other" />
+                <label tabindex="0">
+                  <input
+                    type="radio"
+                    role="radio"
+                    name="radio-button"
+                    value="Other" />
                   <span>Other</span>
                 </label>
               </fieldset>
-              <fieldset class="form-textarea">
+              <fieldset role="group" class="form-textarea">
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Text here..."></textarea>
+                <textarea
+                  aria-label="Message field"
+                  tabindex="0"
+                  id="message"
+                  placeholder="Text here..."></textarea>
               </fieldset>
-              <fieldset class="form-checkbox">
+              <fieldset role="group" class="form-checkbox">
                 <label>
-                  <input type="checkbox" name="checkbox" value="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    value="checkbox"
+                    aria-label="Accept the Terms"
+                    role="checkbox" />
                   <span>Accept the Terms</span>
                 </label>
                 <label>
-                  <input type="checkbox" name="checkbox" value="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    value="checkbox"
+                    aria-label="Accept the Terms"
+                    role="checkbox" />
                   <span>Accept the Terms</span>
                 </label>
               </fieldset>
-              <button type="submit">Send Message</button>
+              <button role="button" aria-label="Send message" type="submit">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -206,22 +286,24 @@
             Subscribe and be the first to know about our news and promotions.
           </p>
           <form action="">
-            <input type="text" placeholder="example@gmail.com" />
-            <button type="submit">Subscribe</button>
+            <input tabindex="0" type="text" placeholder="example@gmail.com" />
+            <button role="button" tabindex="0" type="submit">Subscribe</button>
           </form>
         </div>
         <div class="plantme-links">
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Site Map</a></li>
+            <li><a aria-label="About us" tabindex="0" href="#">About Us</a></li>
+            <li>
+              <a aria-label="Contact us" tabindex="0" href="#">Contact Us</a>
+            </li>
+            <li><a aria-label="Blog" tabindex="0" href="#">Blog</a></li>
+            <li><a aria-label="Site map" tabindex="0" href="#">Site Map</a></li>
           </ul>
         </div>
         <div class="plantme-info">
           <p>Contacts</p>
           <p class="phone-num">+38 063 072 0121</p>
-          <a href="#">plantme.store@gmail.com</a>
+          <a tabindex="0" href="#">plantme.store@gmail.com</a>
           <div class="sponsors">
             <img src="./assets/visa.svg" alt="Visa logo" /><img
               src="./assets/mastercard.svg"
@@ -230,14 +312,22 @@
         </div>
       </section>
     </main>
-    <div style="border: 1px solid #E9E9E9"></div>
+    <div style="border: 1px solid #e9e9e9"></div>
     <footer class="footer">
       <p>© 2022 PlantMe. All Rights Reserved</p>
       <div class="footer-links">
         <ul>
-          <li><a href="#">Privay Policy</a></li>
-          <li><a href="#">Terms of service</a></li>
-          <li><a href="#">Language</a></li>
+          <li>
+            <a aria-label="Privacy Policy" tabindex="0" href="#"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a aria-label="Terms of service" tabindex="0" href="#"
+              >Terms of service</a
+            >
+          </li>
+          <li><a aria-label="Language" tabindex="0" href="#">Language</a></li>
         </ul>
       </div>
     </footer>
